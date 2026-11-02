@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Watchtower alpha</title>
+    <description>Alpha channel. Items are added by scripts/sign-and-notarize.sh in deep-well-labs/watchtower.</description>
+    <language>en</language>
+  </channel>
+</rss>
