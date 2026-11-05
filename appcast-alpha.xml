@@ -6,6 +6,16 @@
     <language>en</language>
 
   <item>
+    <title>Version 0.1.0-alpha.5</title>
+    <pubDate>Thu, 05 Nov 2026 01:35:42 +0000</pubDate>
+    <sparkle:version>233</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.5</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.5/Watchtower-0.1.0-alpha.5.dmg" length="6356632" type="application/octet-stream" sparkle:edSignature="ICuAdWbw11tWQ4rwTn5IyJkdm49dHApVUMdl5mr1lSHtvIkC9OeVa5J1VmgZE0Qfdqb2jhjkCaSLEJEEpJMaBQ=="/>
+  </item>
+  <item>
     <title>Version 0.1.0-alpha.4</title>
     <pubDate>Thu, 05 Nov 2026 00:24:22 +0000</pubDate>
     <sparkle:version>231</sparkle:version>
