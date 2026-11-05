@@ -4,6 +4,17 @@
     <title>Watchtower alpha</title>
     <description>Alpha channel. Items are added by scripts/sign-and-notarize.sh in deep-well-labs/watchtower.</description>
     <language>en</language>
+
+  <item>
+    <title>Version 0.1.0-alpha.4</title>
+    <pubDate>Thu, 05 Nov 2026 00:24:22 +0000</pubDate>
+    <sparkle:version>231</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.4</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.4/Watchtower-0.1.0-alpha.4.dmg" length="7274079" type="application/octet-stream" sparkle:edSignature="ucB/HKA6QxjwDwfyKajENK/b3Fl+Etuk6dE8xTJCNsjk3JLzk1h3MhX21XmwXbZFIRDPK6JSy2PUkXc5JrG/Cg=="/>
+  </item>
   <item>
       <title>Version 0.1.0-alpha.3</title>
       <pubDate>Wed, 04 Nov 2026 20:05:03 +0000</pubDate>
