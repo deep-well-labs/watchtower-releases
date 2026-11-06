@@ -6,6 +6,17 @@
     <language>en</language>
 
   <item>
+    <title>Version 0.1.0-alpha.8</title>
+    <pubDate>Fri, 06 Nov 2026 18:39:35 +0000</pubDate>
+    <sparkle:version>264</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.8</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.8/Watchtower-0.1.0-alpha.8.dmg" length="6600700" type="application/octet-stream" sparkle:edSignature="HSOXQ+d71pBsx8s6zjO3gE2CU0JXPrOPSx1wgCmT1CRgTObsxPsgIK/RCyr0K4wl2XfhwQU+to0H1YFcn9S+AA=="/>
+  </item>
+
+  <item>
     <title>Version 0.1.0-alpha.7</title>
     <pubDate>Fri, 06 Nov 2026 05:17:41 +0000</pubDate>
     <sparkle:version>254</sparkle:version>
