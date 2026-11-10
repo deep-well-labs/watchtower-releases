@@ -6,6 +6,17 @@
     <language>en</language>
 
   <item>
+    <title>Angry Porter 0.1.0-alpha.14</title>
+    <pubDate>Tue, 10 Nov 2026 19:48:10 +0000</pubDate>
+    <sparkle:version>303</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.14</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.14/Angry-Porter-0.1.0-alpha.14.dmg" length="21278347" type="application/octet-stream" sparkle:edSignature="w65wdDywyqRviayFPT+x1moaGgsO8qZsiIeesiptWgIDxMDAf993V+5nb5YwV5louvU/uIfUUpzSqMJ+1MevBw=="/>
+  </item>
+
+  <item>
     <title>Angry Porter 0.1.0-alpha.13</title>
     <pubDate>Tue, 10 Nov 2026 14:19:52 +0000</pubDate>
     <sparkle:version>300</sparkle:version>
