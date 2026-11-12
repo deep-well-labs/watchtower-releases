@@ -6,6 +6,24 @@
     <language>en</language>
 
   <item>
+    <title>Angry Porter 0.1.0-alpha.18</title>
+    <pubDate>Thu, 12 Nov 2026 20:16:25 +0000</pubDate>
+    <description sparkle:format="plain-text">- Network records keep arriving past one bad record. If the app cannot read a batch of network records, the network sensor now narrows down to the single record at fault, sets only that one aside and counts it, and delivers the rest in order. Before, one unreadable batch was offered again every second and held back everything behind it. Settings and the network figures now say when records are not reaching the store (#506, #703, #706).
+- The Porter in Settings. The Porter's asides, games and clips have their own "The Porter" heading directly under Presentation. The date each clip was offered is shown in full (#693, #697, #700, #701).
+- Release notes in the update dialog. "Check for Updates" now shows what changed. With a paid license, an update published after the covered range says so in one line; the update is still offered (#428, #705).
+- Less repeated background work. Client configuration files are parsed again only when they change. Several reads that walked the whole store now read only the newest records or only what was added since the last look. A request to the network sensor that timed out no longer leaves its timer running. The radar, the usual-range charts and the "What left this Mac" diagram redraw less (#497, #698, #503, #699, #704, #492, #702, #505, #707). Measured at rest on a synthetic store, processor use did not change measurably against alpha.17; no speed or battery-life improvement is promised.
+- One-way step for the records store. Once this version has opened the store, alpha.17 and older versions will not open it; they offer to update or delete. Records are not rewritten. The step exists because the network sensor's hourly status record can now carry the count of records set aside (#506, #706).
+- No change to what is recorded, retention, sensor scope or redaction, and no new network connection.
+- Requires macOS 26 or later on Apple Silicon. This alpha expires at 00:00 UTC on 2026-12-12, 30 UTC calendar days after its signed release date. Update to resume recording; existing records remain available under normal retention and monitored traffic continues unchanged.
+- Package tests and both Xcode builds passed on the released source, and the founder ran a signed dogfood build of the same source. The network sensor's manual checklist on a signed build, clean-Mac installation and the in-place update from alpha.17 were not performed for this release; the founder accepted deferring them.</description>
+    <sparkle:version>341</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.18</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.18/Angry-Porter-0.1.0-alpha.18.dmg" length="26396996" type="application/octet-stream" sparkle:edSignature="ihB8PVWxMWGmyu8M/pMfSXy0s4z7mywfCeJnszVbhb3wCsP05crZcoCgMGn4EO3KNKFmmhvZ1tyOvRD4ieh8AA=="/>
+  </item>
+  <item>
     <title>Angry Porter 0.1.0-alpha.17</title>
     <pubDate>Thu, 12 Nov 2026 03:58:48 +0000</pubDate>
     <sparkle:version>329</sparkle:version>
