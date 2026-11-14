@@ -6,6 +6,25 @@
     <language>en</language>
 
   <item>
+    <title>Angry Porter 0.1.0-alpha.19</title>
+    <pubDate>Sat, 14 Nov 2026 00:49:24 +0000</pubDate>
+    <description sparkle:format="plain-text">- Porter's packs. Settings → Porter's packs installs a .porterpack folder of Porter clips, chosen or dropped. Each pack is checked against Deep Well Labs' signature before anything is copied; a pack that fails is refused with the reason. An installed pack shows its edition, clips and buyer, and its clips play at once. Remove takes a pack out; Export copies installed packs beside the export and Delete removes them. Installing sends nothing anywhere. Packs for sale will be announced separately (#642, #742, #744, #747).
+- Five new Porter clips. Two packs now come with the app: Knocking at the Gate, four more lines from the Porter scene, and Harvest Table, one line for US Thanksgiving. Like the first five, each clip plays once, when what it says is true, and then waits in Settings. Settings → Porter's packs names the packs that come with the app (#642, #745, #748).
+- Check for Updates from the menu bar. The menu bar icon's right-click menu has Check for Updates… (#750, #752).
+- Pause the Timeline. Pause holds the live list still; the count beside Resume says how many events arrived meanwhile. A delete, or opening an event from a notification, resumes it (#749, #753).
+- Settings returns you to the app. Closing Settings opened from the app window brings that window back to the front (#751, #754).
+- Less memory held while reading records. The flag and digest reads go through the store a page at a time, and cached record windows are let go when unread for ten minutes. Measured on a synthetic store in a test process; no figure is promised for the app (#502, #727).
+- No change to what is recorded, retention, sensor scope or redaction, and no new network connection. The records store is unchanged; alpha.18 can still open it.
+- Requires macOS 26 or later on Apple Silicon. This alpha expires at 00:00 UTC on 2026-12-14, 30 UTC calendar days after its signed release date. Update to resume recording; existing records remain available under normal retention and monitored traffic continues unchanged.
+- CI passed on each merged change. The founder ran a signed dogfood build with every change except #752, #753 and #754, and installed a pack signed with the production key on it. The network sensor's manual checklist on a signed build, clean-Mac installation and the in-place update from alpha.18 were not performed for this release; the founder accepted deferring them.</description>
+    <sparkle:version>380</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.19</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.19/Angry-Porter-0.1.0-alpha.19.dmg" length="30205982" type="application/octet-stream" sparkle:edSignature="iTzKJu4vm8Fn507yo2OL477kuMeSSqTCQ08WO6OmvuzscokXKaF5zJtyFh+8RoYww9RJXrnHlWOSXaTjkjmfBA=="/>
+  </item>
+  <item>
     <title>Angry Porter 0.1.0-alpha.18</title>
     <pubDate>Thu, 12 Nov 2026 20:16:25 +0000</pubDate>
     <description sparkle:format="plain-text">- Network records keep arriving past one bad record. If the app cannot read a batch of network records, the network sensor now narrows down to the single record at fault, sets only that one aside and counts it, and delivers the rest in order. Before, one unreadable batch was offered again every second and held back everything behind it. Settings and the network figures now say when records are not reaching the store (#506, #703, #706).
