@@ -6,6 +6,24 @@
     <language>en</language>
 
   <item>
+    <title>Angry Porter 0.1.0-alpha.21</title>
+    <pubDate>Sat, 14 Nov 2026 19:38:53 +0000</pubDate>
+    <description sparkle:format="plain-text">- Where the tokens go. Angry Porter reads, from the session logs Claude Code and Codex write on this Mac, only each model response's token counts by type, the model, the time and the session; no prompt, reply, file or tool content is kept, and nothing leaves the Mac. Tokens appear in the menu bar glance, the Overview, a session's summary and Coverage (#774, #775 to #779, #810, #811, #812, #814, #827).
+- An estimate, not a bill. A dollar figure beside the tokens is always marked "estimate at API list prices", from a price table shipped with the app. Subscriptions, fast mode, batch pricing, service tiers and tool charges are not in it. A session whose log cannot be read says "unknown", never zero (#778, #793).
+- Spend and token alerts. Settings takes a dollar threshold, a token threshold, or both, over 1 hour, 24 hours or 7 days, per agent. Off until set; notifications off until turned on (#780, #795, #803, #807, #813, #815).
+- Ask an agent to quit, yourself. "Stop…" on a flag's detail or a session's view, for a Claude Code or Codex session started in a terminal, asks the process once to quit after a confirmation that names it. Never automatic, never forced; programs it started may keep running. Each press is in the Timeline as "Your action". Agents run by an app show no "Stop…" (#781, #782, #783, #801, #809, #826).
+- Angry Porter observes only, with one exception: you can ask an agent process to quit from the app, and only you can. Nothing is blocked, changed or delayed, nothing leaves the Mac, and no network connection is added. The records store is unchanged; alpha.20 can still open it.
+- Requires macOS 26 or later on Apple Silicon. This alpha expires at 00:00 UTC on 2026-12-14, 30 UTC calendar days after its signed release date. Update to resume recording; existing records remain available under normal retention and monitored traffic continues unchanged.
+- CI and the full local check passed with both features on; the stop was tried on real scratch sessions; the founder ran a signed dogfood build of the same source. The network sensor's manual checklist on a signed build, clean-Mac installation, the in-place update from alpha.20 and the notification's Stop… action were not performed; the founder accepted deferring them.</description>
+    <sparkle:version>411</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.21</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.21/Angry-Porter-0.1.0-alpha.21.dmg" length="31012289" type="application/octet-stream" sparkle:edSignature="lv0aQmAyNTC5yYp3EQYo2tI/eYgYyd/PkC0X3vJCovyDb5PCuWnrIGjBWml8tBCAfVIthLt4czCP3KfdPyxKAA=="/>
+  </item>
+
+  <item>
     <title>Angry Porter 0.1.0-alpha.20</title>
     <pubDate>Sat, 14 Nov 2026 17:36:10 +0000</pubDate>
     <description sparkle:format="plain-text">- A flag for a tool that keeps failing. Ten failures of one agent tool in a row within five minutes raise one Angry Porter note in the Timeline ("Bash failed 10 times in a row between … and …, as recorded"), within about ten seconds and at most once every half hour per tool. Advisory only: nothing is stopped, blocked or retried. Its notification is off until "A tool fails many times in a row" is turned on in Settings (#549, #550, #784, #786, #788, #798).
