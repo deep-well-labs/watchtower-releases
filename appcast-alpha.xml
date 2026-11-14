@@ -6,6 +6,23 @@
     <language>en</language>
 
   <item>
+    <title>Angry Porter 0.1.0-alpha.20</title>
+    <pubDate>Sat, 14 Nov 2026 17:36:10 +0000</pubDate>
+    <description sparkle:format="plain-text">- A flag for a tool that keeps failing. Ten failures of one agent tool in a row within five minutes raise one Angry Porter note in the Timeline ("Bash failed 10 times in a row between … and …, as recorded"), within about ten seconds and at most once every half hour per tool. Advisory only: nothing is stopped, blocked or retried. Its notification is off until "A tool fails many times in a row" is turned on in Settings (#549, #550, #784, #786, #788, #798).
+- Groundwork, switched off. A token and cost meter, spend and token alerts, and a stop the person clicks are built but switched off: no agent session log is read, no meter or alert is shown, and no process can be signalled (#773, ADR-0020, ADR-0021).
+- One-way step for the records store. Once this version has opened the store, alpha.19 and older versions will not open it; they offer to update or delete. Records are not rewritten.
+- No change to what the sensors record, retention, sensor scope or redaction, and no new network connection.
+- Requires macOS 26 or later on Apple Silicon. This alpha expires at 00:00 UTC on 2026-12-14, 30 UTC calendar days after its signed release date. Update to resume recording; existing records remain available under normal retention and monitored traffic continues unchanged.
+- CI passed on each merged change and the full local check passed on each app change. The founder checked the new flag on a local build with synthetic records. Not dogfooded on a signed build; the network sensor's manual checklist on a signed build, clean-Mac installation and the in-place update from alpha.19 were not performed for this release; the founder accepted deferring them.</description>
+    <sparkle:version>404</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.20</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.20/Angry-Porter-0.1.0-alpha.20.dmg" length="31009057" type="application/octet-stream" sparkle:edSignature="XYUIfyKGD8apTJ9dple9Rbj+a/T5MAxLNNbMo4A0HoW8qPBhzVJBolz8ISff4+4T6WlTyukNSlFzvKxntCBLBQ=="/>
+  </item>
+
+  <item>
     <title>Angry Porter 0.1.0-alpha.19</title>
     <pubDate>Sat, 14 Nov 2026 00:49:24 +0000</pubDate>
     <description sparkle:format="plain-text">- Porter's packs. Settings → Porter's packs installs a .porterpack folder of Porter clips, chosen or dropped. Each pack is checked against Deep Well Labs' signature before anything is copied; a pack that fails is refused with the reason. An installed pack shows its edition, clips and buyer, and its clips play at once. Remove takes a pack out; Export copies installed packs beside the export and Delete removes them. Installing sends nothing anywhere. Packs for sale will be announced separately (#642, #742, #744, #747).
