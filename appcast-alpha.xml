@@ -6,6 +6,23 @@
     <language>en</language>
 
   <item>
+    <title>Angry Porter 0.1.0-alpha.22</title>
+    <pubDate>Tue, 17 Nov 2026 18:34:58 +0000</pubDate>
+    <description sparkle:format="plain-text">- Settings in five tabs. Settings is grouped into General, Porter, Alerts, Network &amp; data and About instead of one long scroll. Under the Technical preset the Porter tab is hidden. Store cleanup notes fold into a disclosure (#875, #877).
+- Porter's packs list. Settings → Porter's packs lists the packs in one catalog shared with angryporter.com, with what is installed and what comes with the app (#871, #873, #876, #884).
+- The Timeline keeps your place. When a new event arrives at the top, the selected row stays in view if it was on screen; if you had scrolled away, the list is left alone (#879).
+- A faster network sensor under many open flows. Starting a flow no longer copies every open flow, and at the 20,000-flow limit the oldest flow is found without scanning them all. Measured on a release build of the sensor's public API with synthetic flows: 20,000 flow starts took 8.8 s before and 0.2 s after, and 20,000 more that each evict took 11.5 s before and 0.3 s after. Records written are unchanged; no figure is promised for the app (#837, #838).
+- No change to what is recorded, retention, sensor scope or redaction, and no new network connection. The records store is unchanged from alpha.21; alpha.21 can still open it.
+- Requires macOS 26 or later on Apple Silicon. This alpha expires at 00:00 UTC on 2026-12-17, 30 UTC calendar days after its signed release date. Update to resume recording; existing records remain available under normal retention and monitored traffic continues unchanged.
+- CI passed on each merged change and the full local check passed on the released source. The founder runs a signed dogfood build, 0.0.14, with the Settings tabs and the network sensor changes; the Settings Porter-tab hiding, the packs list and the Timeline change came after it. The network sensor's manual checklist on a signed build, clean-Mac installation, the in-place update from alpha.21, signed expiration and device checks and VoiceOver and keyboard checks of the changed views were not performed; the founder accepted deferring them.</description>
+    <sparkle:version>462</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.22</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.22/Angry-Porter-0.1.0-alpha.22.dmg" length="32285767" type="application/octet-stream" sparkle:edSignature="iE2or7M+GJ9oK90PzVWWjxj6Gm9OmdyOOrhCTYpeSzz8Y5CE5X+QVs7g1dn7Xv4c76rwGDs3HMc4L/c7pVcxAQ=="/>
+  </item>
+  <item>
     <title>Angry Porter 0.1.0-alpha.21</title>
     <pubDate>Sat, 14 Nov 2026 19:38:53 +0000</pubDate>
     <description sparkle:format="plain-text">- Where the tokens go. Angry Porter reads, from the session logs Claude Code and Codex write on this Mac, only each model response's token counts by type, the model, the time and the session; no prompt, reply, file or tool content is kept, and nothing leaves the Mac. Tokens appear in the menu bar glance, the Overview, a session's summary and Coverage (#774, #775 to #779, #810, #811, #812, #814, #827).
