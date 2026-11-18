@@ -6,6 +6,24 @@
     <language>en</language>
 
   <item>
+    <title>Angry Porter 0.1.0-alpha.23</title>
+    <pubDate>Wed, 18 Nov 2026 02:41:30 +0000</pubDate>
+    <description sparkle:format="plain-text">- Check the retained record more carefully. Verify Chain now rejects gaps and negative sequence numbers. Export checks canonical event bytes against stored fields, hashes and chain links before accepting the file (#916, #925).
+- Know what a successful check means. The Timeline says retained records are internally consistent, with an About record checks explanation beside Verify and Export. It distinguishes consistency from protection against rewriting, incomplete capture and unauthenticated retention summaries (#931).
+- Take the record and check it yourself. The public guide provides a standalone offline JSON Lines checker, caller-trusted checkpoint comparisons, append-order replay and synthetic edited/truncated examples. Replay never executes recorded tool calls. The checker is a separate download, not part of this app's Verify action (#914, #928).
+- Current Codex model estimates. The bundled API-list-price table adds the current GPT-6 and GPT-6.2 models, checked against the providers' published pages on 2026-11-18 UTC. Existing rate entries remain unchanged; new entries apply from that UTC date. Figures remain estimates at API list prices, not subscription charges (#931).
+- Protected permanent history, a separate authenticated archive writer and signed receipts remain in development. The new archive core is not connected to recording. This alpha retains the existing store format, retention and Delete controls; alpha.22 can still open the store. No new sensor, network request or automatic blocking is added.
+- Requires macOS 26 or later on Apple Silicon. For a signed UTC release date of 2026-11-18, this alpha expires at 00:00 UTC on 2026-12-18. Update to resume recording; existing records remain available under normal retention and monitored traffic continues unchanged.
+- Package build/tests, unsigned Debug and Release builds, independent-checker tests and docs checks passed; the changed Verify explanation and actual Save-panel export were inspected on a separate Debug QA app with a temporary test store. Signed app/filter, clean-Mac, upgrade, signed-expiration/device, current-client usage and full minimum-width/keyboard/VoiceOver coverage remain unperformed. The founder accepted deferring those named checks for alpha.23 (#931).</description>
+    <sparkle:version>483</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.23</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.23/Angry-Porter-0.1.0-alpha.23.dmg" length="32462913" type="application/octet-stream" sparkle:edSignature="4BNw465kNgrnF+Ox58AB/DCiHEsE/PCc5mMwGzIP6TLLFtutNrZh5t84gmSEVvyUatu2VaRey45BKHjQiAmTDQ=="/>
+  </item>
+
+  <item>
     <title>Angry Porter 0.1.0-alpha.22</title>
     <pubDate>Tue, 17 Nov 2026 18:34:58 +0000</pubDate>
     <description sparkle:format="plain-text">- Settings in five tabs. Settings is grouped into General, Porter, Alerts, Network &amp; data and About instead of one long scroll. Under the Technical preset the Porter tab is hidden. Store cleanup notes fold into a disclosure (#875, #877).
