@@ -6,6 +6,23 @@
     <language>en</language>
 
   <item>
+    <title>Angry Porter 0.1.0-alpha.25</title>
+    <pubDate>Wed, 18 Nov 2026 18:39:49 +0000</pubDate>
+    <description sparkle:format="plain-text">- A header you can act on. On Overview, the three figures at the top are now buttons with a chevron and a hover highlight. AI services opens the live map and names the first two services, with a tooltip listing each service and the data it was sent. Tool calls opens Your day. Sent to AI still opens What left this Mac. "Live map" and "Flags" join the jump links, and the flag count opens the flags (#962).
+- What today's flags are. A line under the headline counts the day's flags by kind: sent more than usual, new to this Mac, while you were away, and other. It states what the rules recorded and gives no verdict. It is hidden when there are no flags or they could not be read (#965).
+- Hooks not installed, said plainly. When no agent client has its hooks in place, the tool-call figure reads "Hooks not installed" with an Install link instead of a zero, on Overview and in the menu bar glance. One local notification tells you when hooks that were connected are found missing. Nothing is installed without your review (#951, #952).
+- Groundwork for permanent protected history continues: an inactive, uninstalled helper service now exists in the source. It is not bundled, registered or connected to recording, and it opens no archive. The store format, retention and Delete controls are unchanged; alpha.24 can still open the store. No new sensor or network connection is added (#943).
+- Requires macOS 26 or later on Apple Silicon. For a signed UTC release date of 2026-11-18, this alpha expires at 00:00 UTC on 2026-12-18, measured from release rather than installation. Update to resume recording; existing records remain available under normal retention and monitored traffic continues unchanged.
+- Package tests and unsigned Debug and Release builds passed for the Overview changes. Release-specific signed app and filter checks, clean-Mac installation, activation and uninstall, signed expiration and device checks, in-place Sparkle upgrade, a VoiceOver review of the new header and a CPU measurement of the Overview remain unperformed. The founder explicitly accepted deferring these named checks for alpha.25.</description>
+    <sparkle:version>523</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.25</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.25/Angry-Porter-0.1.0-alpha.25.dmg" length="32493782" type="application/octet-stream" sparkle:edSignature="En6kTRHqDydg7m/uxamzaEqFaVllA/BFF+FR8drIXtXKpDaIZsDlqDrWb4twXI2THHq5pjpeh4cdKEU9/pEUDg=="/>
+  </item>
+
+  <item>
     <title>Angry Porter 0.1.0-alpha.24</title>
     <pubDate>Wed, 18 Nov 2026 13:35:08 +0000</pubDate>
     <description sparkle:format="plain-text">- A visual record check you can keep. The separate offline checker offers a local file chooser, clear consistency and checkpoint results, synthetic examples and a downloadable check report. It runs in a browser without the app, an account or uploading records. It is a separate website download, not a new in-app action (#937, #945).
