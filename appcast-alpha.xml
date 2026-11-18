@@ -6,6 +6,23 @@
     <language>en</language>
 
   <item>
+    <title>Angry Porter 0.1.0-alpha.24</title>
+    <pubDate>Wed, 18 Nov 2026 13:35:08 +0000</pubDate>
+    <description sparkle:format="plain-text">- A visual record check you can keep. The separate offline checker offers a local file chooser, clear consistency and checkpoint results, synthetic examples and a downloadable check report. It runs in a browser without the app, an account or uploading records. It is a separate website download, not a new in-app action (#937, #945).
+- The native app retains alpha.23's stronger Verify and Export checks and its About record checks explanation. The price table was reviewed against provider pages on 2026-11-18 UTC; rates and historical entries remain unchanged (#944).
+- A matching checkpoint you previously trusted indicates that the covered recorded bytes have not changed, including alteration by an AI agent. It does not establish authorship, AI correctness, complete capture or that an older valid export is the newest copy. A checkpoint taken only from the checked export adds no independent protection.
+- Permanent protected history and signed receipts remain in development. The archive connection foundation is not connected to recording. The store format, retention and Delete controls are unchanged; alpha.23 can still open the store. No new sensor or network connection is added.
+- Requires macOS 26 or later on Apple Silicon. For a signed UTC release date of 2026-11-18, this alpha expires at 00:00 UTC on 2026-12-18, measured from release rather than installation. Update to resume recording; existing records remain available under normal retention and monitored traffic continues unchanged.
+- Package tests, unsigned Debug/Release builds, independent checker and website checks passed. Release-specific signed app/filter, clean-Mac installation/activation/uninstall, signed expiration/device, in-place Sparkle upgrade, controlled current-client usage and full minimum-width/keyboard/VoiceOver checks remain unperformed. Direct file-origin, completed browser-download saving, native drag/drop and cross-browser checks of the visual checker also remain unperformed. The founder explicitly accepted deferring these named checks for alpha.24 (#944).</description>
+    <sparkle:version>501</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.24</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.24/Angry-Porter-0.1.0-alpha.24.dmg" length="32462600" type="application/octet-stream" sparkle:edSignature="obwhluGB66fuqanFGKuPSbFsYy1jvFYBoWnzeg9QbFzTBrJXIEFOGNE7yr2B7Kx56yimM9VLHVaTP0NXOX2eBA=="/>
+  </item>
+
+  <item>
     <title>Angry Porter 0.1.0-alpha.23</title>
     <pubDate>Wed, 18 Nov 2026 02:41:30 +0000</pubDate>
     <description sparkle:format="plain-text">- Check the retained record more carefully. Verify Chain now rejects gaps and negative sequence numbers. Export checks canonical event bytes against stored fields, hashes and chain links before accepting the file (#916, #925).
