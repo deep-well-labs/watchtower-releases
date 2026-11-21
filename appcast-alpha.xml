@@ -6,6 +6,25 @@
     <language>en</language>
 
   <item>
+    <title>Angry Porter 0.1.0-alpha.26</title>
+    <pubDate>Sat, 21 Nov 2026 22:26:19 +0000</pubDate>
+    <description sparkle:format="plain-text">- Guided setup on first launch. On a new installation the Install pane opens once, with one action ("Set up everything for me", "Update my setup" or "Check everything is working", depending on state). The first two open a summary sheet that names every change; its confirming button is the only thing that writes. The run stops at the first failure, with no undo, and a target you restored yourself is never re-added. Checking only reads. The login-item and notification questions wait until the pane closes, and "Finish setup" appears in the menu bar glance while something is left to set up (#880, #975).
+- Qoder joins the agent clients. Qoder's command-line hooks are recorded and can be installed from the Install pane, user scope only, with a backup and a restore. Its destination qoder.sh is labelled. Cursor's own hooks can be installed from the command line only (install --hooks --client cursor); the Install pane does not list Cursor yet (#1010, #1017, #901, #902).
+- Cursor running Claude Code's hooks is no longer counted as Claude Code. When another known client runs a Claude Code hook, the record is not stored as Claude Code; Coverage counts it as lost, "run by another client", and names the host. The Day river no longer says Cursor has no hook API (#1006, #1016, #1018).
+- More names on the network picture. Gemini's chat and Code Assist hosts are labelled Google Gemini, and Codex, Claude Desktop and Cursor helper processes are named under their client. Names are labels on what was already recorded; nothing new is observed (#1001, #1015, #1020, #1026).
+- Antigravity and GitHub Copilot CLI adapters are in the source but their installers are switched off: nothing is installed for them from this alpha. A generated client support table is added to the documentation (#1013, #1019, #1022, #1027, #1031).
+- One-way step for the records store. Once this version has opened the store (format 15 to 20), alpha.25 and older versions will not open it; they offer to update or delete. Records are not rewritten and retention and Delete controls are unchanged.
+- Requires macOS 26 or later on Apple Silicon. For a signed UTC release date of 2026-11-21, this alpha expires at 00:00 UTC on 2026-12-21, measured from release rather than installation. Update to resume recording; existing records remain available under normal retention and monitored traffic continues unchanged.
+- The full local check (package tests, Xcode Debug and unsigned Release) passed on the released source, and the founder ran a signed dogfood build, 0.0.17, from the same commit. Release-specific signed app and filter checks, clean-Mac installation, activation and uninstall, signed expiration and device checks and the in-place Sparkle upgrade from alpha.25 remain unperformed unless the release record says otherwise.</description>
+    <sparkle:version>589</sparkle:version>
+    <sparkle:shortVersionString>0.1.0-alpha.26</sparkle:shortVersionString>
+    <sparkle:channel>alpha</sparkle:channel>
+    <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+    <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+    <enclosure url="https://github.com/deep-well-labs/watchtower-releases/releases/download/v0.1.0-alpha.26/Angry-Porter-0.1.0-alpha.26.dmg" length="32761618" type="application/octet-stream" sparkle:edSignature="C1NWvBiB7Xyw8ZkhGdvoHzR1hOilg3rIR5JlDGkNrLafWaFyfmjsimRz8Qy5s3UdFFtSYEpJX185TC6DWznXBA=="/>
+  </item>
+
+  <item>
     <title>Angry Porter 0.1.0-alpha.25</title>
     <pubDate>Wed, 18 Nov 2026 18:39:49 +0000</pubDate>
     <description sparkle:format="plain-text">- A header you can act on. On Overview, the three figures at the top are now buttons with a chevron and a hover highlight. AI services opens the live map and names the first two services, with a tooltip listing each service and the data it was sent. Tool calls opens Your day. Sent to AI still opens What left this Mac. "Live map" and "Flags" join the jump links, and the flag count opens the flags (#962).
